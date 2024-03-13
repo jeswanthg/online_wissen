@@ -54,6 +54,11 @@ def create():
 
     project = Projects(id = id,project_name=project_name, description=description)
     db.session.add(project)
+
+
+
+if __name__=='__main__':
+  app.run(host='0.0.0.0', port = 8000)
     
 
 
